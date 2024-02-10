@@ -1,0 +1,44 @@
+@import "../../scss/variables";
+
+.wrapper {
+  box-sizing: border-box;
+  padding-top: 30px;
+  background-color: $blue;
+  padding-bottom: 30px;
+  min-height: 100vh;
+}
+.cnt {
+  width: 90%;
+  box-sizing: border-box;
+  background-color: $brown;
+  border: 2px solid $darkBorder;
+  height: auto;
+  border-radius: 50px;
+  padding: 40px 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: 481px) {
+  .cnt {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) {
+  .cnt {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .cnt {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,94 @@
+@import "../../scss/variables";
+
+.cnt {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $lightGray;
+  border-radius: 50px;
+  z-index: 3;
+  img {
+    width: 100px;
+  }
+}
+.modal {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 97%;
+  max-width: 350px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  background: $white;
+  border: 1px solid $pink;
+  border-radius: 25px;
+  p {
+    margin: 0;
+  }
+}
+.titleText {
+  font-family: "Modak";
+  color: $pink;
+  font-size: 10vw;
+  -webkit-text-stroke: 0.5px $black;
+  line-height: 0.7;
+  flex-basis: 100%;
+}
+
+.titleText:first-of-type {
+  margin-top: 55px;
+}
+
+.resultsCnt {
+  flex-basis: 100%;
+  margin-top: 10px;
+  font-family: "Lora", serif;
+  color: $black;
+  font-size: 6vw;
+  text-align: center;
+  span {
+    font-weight: 600;
+  }
+}
+
+.regText:first-child {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.imgCnt {
+  flex-basis: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (min-width: 300px) {
+  .titleText {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .resultsCnt {
+    font-size: 19px;
+    p {
+      margin-left: 20px;
+    }
+  }
+  .imgCnt {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 481px) {
+  .titleText {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .modal {
+    max-width: 450px;
+  }
+}

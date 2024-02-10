@@ -1,0 +1,11 @@
+.imagesCnt {
+  padding: 10px;
+  aspect-ratio: 1;
+}
+
+@media (min-width: 768px) {
+  .imagesCnt {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

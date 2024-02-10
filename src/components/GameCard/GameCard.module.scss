@@ -1,0 +1,89 @@
+@import "../../scss/variables";
+
+.gameCard {
+  box-sizing: border-box;
+  background-color: $brown;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid $regularBorder;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px $black;
+  padding: 10px;
+  flex-basis: 100%;
+}
+.cardTittle {
+  color: $pink;
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px $black;
+  margin: 10px 0 0px 0;
+  line-height: 1.1;
+  margin-bottom: 2vw;
+}
+
+.cardImage {
+  border: 1px solid $black;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 80%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cardDescr {
+  font-family: "Lora";
+  font-weight: 600;
+  width: 80%;
+  margin: 2vw auto;
+}
+
+.cardBtn {
+  background-color: $lightBlue;
+  width: 50%;
+  align-self: center;
+  height: 35px;
+  border: 1px solid $black;
+  border-radius: 20px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: $black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  -webkit-text-stroke: 0.5px $gray;
+
+  letter-spacing: 1px;
+}
+.cardBtn:hover {
+  background-color: $pink;
+  font-size: 21px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gameCard {
+    flex-basis: calc(47%);
+  }
+  .cardImage {
+    width: 90%;
+  }
+  .cardDescr {
+    width: 90%;
+  }
+}
+@media (min-width: 1025px) {
+  .gameCard {
+    flex-basis: 32%;
+  }
+  .cardImage {
+    width: 90%;
+  }
+  .cardTittle {
+    margin-bottom: 5px;
+  }
+}

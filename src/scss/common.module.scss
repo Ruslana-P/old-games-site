@@ -1,0 +1,48 @@
+@import "./variables";
+
+.titleG {
+  color: $pink;
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px black;
+}
+.gameFiledG {
+  width: 90%;
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 20px;
+  gap: 2px;
+  box-shadow: 0 0 0 2px $lightBrown;
+}
+.additBlocksG {
+  border: 1px solid $black;
+  border-radius: 20px;
+  box-shadow: 0 0 0 2px $lightBrown;
+  margin: 35px auto;
+  position: relative;
+  width: 90%;
+}
+
+@media (min-width: 481px) {
+  .gameFiledG {
+    flex-basis: 65%;
+    margin: 0 0 0 10px;
+  }
+}
+@media (min-width: 768px) {
+  .gameFiledG {
+    width: 400px;
+    height: 400px;
+    margin-left: 25px;
+    justify-self: center;
+  }
+}
+@media (min-width: 1025px) {
+  .gameFiledG {
+    width: 500px;
+    height: 500px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../scss/variables";
+
+.elem {
+  flex-basis: 32%;
+  flex-grow: 1;
+  aspect-ratio: 1;
+  border: 1px solid $black;
+  border-radius: 20px;
+}
+.cross {
+  background-image: url(../../images/cross.svg);
+  background-size: 100% 100%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+.zero {
+  background-image: url(../../images/zero.svg);
+  background-size: 100% 100%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

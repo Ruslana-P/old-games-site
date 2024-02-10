@@ -1,0 +1,12 @@
+.ticTacFiled {
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .ticTacFiled {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}

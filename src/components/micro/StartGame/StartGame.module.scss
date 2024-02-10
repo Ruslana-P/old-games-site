@@ -1,0 +1,29 @@
+@import "../../../scss/variables";
+
+.container {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $lightBrown;
+  border: 2px solid $white;
+  border-radius: 20px;
+  opacity: 1;
+  max-height: 100%;
+}
+.container.hide {
+  opacity: 0;
+  max-height: 0%;
+  transition: opacity 1s linear 0s, max-height 0s linear 1s;
+}
+.container.show {
+  opacity: 1;
+  max-height: 100%;
+  transition: opacity 0.5s linear 0s, max-height 0s linear 0s;
+}

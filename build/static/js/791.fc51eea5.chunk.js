@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkold_games_dite=self.webpackChunkold_games_dite||[]).push([[791],{692:(e,s,a)=>{e.exports=a.p+"static/media/memory_13.34742664e555137dda7e.webp"}}]);

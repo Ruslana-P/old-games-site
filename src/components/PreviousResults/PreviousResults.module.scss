@@ -1,0 +1,54 @@
+@import "../../scss/variables";
+
+.cnt {
+  padding-top: 10px;
+  padding-bottom: 18px;
+  h2 {
+    font-size: 27px;
+  }
+}
+.title {
+  position: absolute;
+  margin: 0;
+  top: -22px;
+  background-color: $brown;
+  padding: 0 5px 0 10px;
+  left: 5px;
+}
+.table {
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Lora", serif;
+  border-collapse: collapse;
+}
+.thead {
+  border-bottom: 1px solid $black;
+}
+.tBody:nth-child(odd) {
+  background-color: $haki;
+}
+td,
+th {
+  padding: 0 4px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-family: "Lora";
+  font-weight: 500;
+}
+@media (min-width: 327px) {
+  .cnt {
+    h2 {
+      font-size: 30px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .cnt {
+    grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
